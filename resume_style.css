@@ -1,0 +1,140 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background: #2B2B2B;
+    color: #A9B7C6;
+    font-family: ConsolasMEW, monospace;
+    font-size: 12.0pt;
+}
+
+@font-face {
+    font-family: ConsolasMEW;
+    src:
+        url('font/consolas/consola.eot?#iefix') format('embedded-opentype'),
+        url('font/consolas/consola.woff') format('woff'),
+        url('font/consolas/consola.ttf')  format('truetype'),
+        url('font/consolas/consola.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: ConsolasMEW;
+    src:
+    url('font/consolas/consolab.eot?#iefix') format('embedded-opentype'),
+    url('font/consolas/consolab.woff') format('woff'),
+    url('font/consolas/consolab.ttf')  format('truetype'),
+    url('font/consolas/consolab.svg#svgFontName') format('svg');
+    font-weight: bold;
+}
+
+
+
+
+#mainContainer{
+    background: #3C3F41;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 700px;
+    width: 100%;
+    min-height: 100%;
+}
+
+.section {
+    border-bottom: ridge;
+    border-color: #A9B7C6;
+    text-align: center;
+    padding: 25px 0;
+    overflow: auto;
+
+}
+
+.halfWidth{
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.halfWidth.l{
+    text-align: left;
+}
+
+.halfWidth.r {
+    text-align: right;
+}
+
+h1,h2,h3{
+    margin: 0 auto;
+
+}
+
+.noBullet{
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.pic{
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.menuContainer{
+    /*background-color: darkcyan;*/
+    min-width: 1px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.menuFouths {
+    display: inline-block;
+    white-space: normal;
+    width: 22%;
+    height: 100%;
+    border-right: ridge;
+    padding: 10px 0;
+    margin: auto;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.description{
+    padding: 20px;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #A9B7C6;
+}
+
+/* visited link */
+a:visited {
+    color: #9876AA;
+}
+
+/* mouse over link */
+a:hover {
+    color: #E7BE5F;
+}
+
+/* selected link */
+a:active {
+    color: #E18F8F;
+}
+
+
+.featherlight-content{
+    background-color: #000 !important;
+}
+
+.featherlight-inner{
+    /*max-height: 300px !important;*/
+    /*max-width: 300px !important;*/
+}
