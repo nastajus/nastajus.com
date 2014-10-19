@@ -38,10 +38,11 @@
     <div class="section">
         <h3>Skills, ordered by mastery:</h3>
         <ul class="noBullet">
-            <li><b>Languages:</b> C#, Java, Ruby, SQL, PHP, JavaScript/HTML/CSS, ASP</li>
-            <li><b>Frameworks:</b> Unity, AndroidSDK, JQuery, XNA, RaphaelJS, .NET</li>
-            <li><b>Environments:</b> Git, Visual Studio, IntelliJ, NetBeans, Chrome Dev Tools</li>
-            <li><b>Tools:</b> Unity Editor, Photoshop, MS Office (Advanced), Bash</li>
+            <li><b>Languages:</b> C#, Java, SQL, PHP, JavaScript/HTML/CSS, ASP, Ruby, UML</li>
+            <li><b>Frameworks:</b> Unity, .NET, AndroidSDK, JQuery, XNA, RaphaelJS</li>
+            <li><b>Environments:</b> Git, Visual Studio, JetBrains, NetBeans, Chrome Dev Tools</li>
+            <li><b>Tools:</b> Unity Editor, Photoshop, MS Office (Advanced), Autodesk, Bash</li>
+            <li><b>Soft:</b> excellent communication, professional, requirement solicitation </li>
         </ul>
 
     </div>
@@ -74,9 +75,27 @@
             </ul>
         </div>
     </div>
-    <!--<div class="section" style="border-bottom:none; padding-bottom: 1px">I like board games. Pandemic is my favourite.</div>-->
-    <div class="section" style="border-bottom:none; padding-bottom: 1px">I actively contribute to open source project. <a href="https://github.com/nastajus/">Follow me on GitHub</a>.</div>
+    <div class="statement section" style="border-bottom:none; padding-bottom: 1px">I like board games. Pandemic is my favourite.</div>
+    <div class="statement section" style="border-bottom:none; padding-bottom: 1px">I actively contribute to open source project. <a href="https://github.com/nastajus/">Follow me on GitHub</a>.</div>
 
 </div>
+
+<script type="text/javascript">
+
+    document.onload = randomStatement();
+
+    //CSS already marks all statements display: none.
+    function randomStatement(){
+        var statements = document.getElementsByClassName("statement");
+        alert (statements);
+        statements.appendChild();
+        var min = 0;
+        var max = statements.length;
+        var choice = Math.random() * (max - min) + min;
+        var child = statements[choice].nodeValue;
+        child.style.display = "block";
+    }
+</script>
+
 </body>
 </html>

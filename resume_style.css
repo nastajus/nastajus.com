@@ -22,10 +22,10 @@ body{
 @font-face {
     font-family: ConsolasMEW;
     src:
-    url('font/consolas/consolab.eot?#iefix') format('embedded-opentype'),
-    url('font/consolas/consolab.woff') format('woff'),
-    url('font/consolas/consolab.ttf')  format('truetype'),
-    url('font/consolas/consolab.svg#svgFontName') format('svg');
+        url('font/consolas/consolab.eot?#iefix') format('embedded-opentype'),
+        url('font/consolas/consolab.woff') format('woff'),
+        url('font/consolas/consolab.ttf')  format('truetype'),
+        url('font/consolas/consolab.svg#svgFontName') format('svg');
     font-weight: bold;
 }
 
@@ -106,6 +106,10 @@ h1,h2,h3{
 
 .description{
     padding: 20px;
+}
+
+.statement{
+    display: none;
 }
 
 
