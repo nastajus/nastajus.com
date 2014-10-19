@@ -75,7 +75,7 @@
             </ul>
         </div>
     </div>
-    <div class="statement section" style="border-bottom:none; padding-bottom: 1px">I like board games. Pandemic is my favourite.</div>
+    <!--<div class="statement section" style="border-bottom:none; padding-bottom: 1px">I like board games. Pandemic is my favourite.</div>-->
     <div class="statement section" style="border-bottom:none; padding-bottom: 1px">I actively contribute to open source project. <a href="https://github.com/nastajus/">Follow me on GitHub</a>.</div>
 
 </div>
@@ -87,13 +87,12 @@
     //CSS already marks all statements display: none.
     function randomStatement(){
         var statements = document.getElementsByClassName("statement");
-        alert (statements);
-        statements.appendChild();
+//        alert (statements);
         var min = 0;
         var max = statements.length;
         var choice = Math.random() * (max - min) + min;
-        var child = statements[choice].nodeValue;   //errors here
-        child.style.display = "block";
+//        var child = statements[choice].nodeValue;   //errors here
+//        child.style.display = "block";
     }
 </script>
 
