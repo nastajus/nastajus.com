@@ -3,7 +3,7 @@ html, body {
 }
 
 body{
-    margin: 0;
+    /*margin: 0;*/
     background: #2B2B2B;
     color: #A9B7C6;
     font-family: ConsolasMEW, monospace;
@@ -50,20 +50,29 @@ body{
 
 }
 
-.halfWidth{
-    float: left;
+.partWidth {
     width: 50%;
+    float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.halfWidth.l{
+.partWidth.l{
     text-align: left;
 }
 
-.halfWidth.r {
+.partWidth.r {
     text-align: right;
+}
+
+
+.partWidth.l.position{
+    width: 80%;
+}
+
+.partWidth.r.year {
+    width:20%;
 }
 
 h1,h2,h3{
@@ -90,6 +99,7 @@ h1,h2,h3{
     min-width: 1px;
     overflow: hidden;
     vertical-align: middle;
+    width: 100%;
 }
 
 .menuFouths {
@@ -110,6 +120,11 @@ h1,h2,h3{
 
 .statement{
     display: none;
+}
+
+
+.icon{
+    vertical-align: middle;
 }
 
 
