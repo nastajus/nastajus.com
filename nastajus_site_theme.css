@@ -157,3 +157,19 @@ a:active {
     /*max-height: 300px !important;*/
     /*max-width: 300px !important;*/
 }
+
+.profile {
+    width: 200px;
+    height: 200px;
+    background: url("nastajus.png") no-repeat;
+    display: inline-block;
+    background-size: contain;
+}
+.profile:hover {
+    background: url("nastajus2.png") no-repeat;
+    background-size: contain;
+}
+
+.fa {
+    padding-right: 10px;
+}
