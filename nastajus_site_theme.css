@@ -75,7 +75,7 @@ body{
     width:20%;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
 
 }
@@ -161,15 +161,23 @@ a:active {
 .profile {
     width: 200px;
     height: 200px;
-    background: url("nastajus.png") no-repeat;
+    background: url("nastajus-profile.png") no-repeat;
     display: inline-block;
     background-size: contain;
 }
 .profile:hover {
-    background: url("nastajus2.png") no-repeat;
+    background: url("nastajus2-profile.png") no-repeat;
     background-size: contain;
 }
 
 .fa {
     padding-right: 10px;
+}
+
+.toronto_icon{
+    width: 14px;
+    height: 17px;
+    background: url("toronto-icon.png") no-repeat;
+    display: inline-block;
+    background-size: contain;
 }
