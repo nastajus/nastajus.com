@@ -181,3 +181,7 @@ a:active {
     display: inline-block;
     background-size: contain;
 }
+
+h1>a{
+    text-decoration: none;
+}
