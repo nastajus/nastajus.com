@@ -10,6 +10,25 @@
     <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
     <title>Portfolio | Nastajus</title>
+
+
+
+    <!-- hacky quick upload, todo fix remove later -->
+    <style>
+    .crop {
+        width: 350px;
+        height: 195px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 310px;
+        height: 280px;
+        margin: 0 0 0 0;
+    }
+
+    </style>
+
 </head>
 <body>
 
@@ -25,7 +44,7 @@
         <div class="partWidth">
             <a href="#" data-featherlight="#cc1"><img src="cc1.gif" class="pic" id="cc1"/></a>
         </div>
-        <div class="partWidth">
+        <div class="partWidth crop">
             <a href="#" data-featherlight="#cc2"><img src="cc2.gif" class="pic" id="cc2"/></a>
         </div>
         <div class="menuContainer">
@@ -39,10 +58,11 @@
                 <li>Inspired by Nicky Case's "Remember Anything Forever-ish" site <a href="https://ncase.me/remember">here</a> for spaced repetition, I began building this more polished experience.</li>
                 <li>Designed to be one of those ambitious projects that keeps growing.</li>
                 <li>Dynamically allows users to create and load in their own cards, and test themselves on their memory, progressively over time with statistics.</li>
-
+                <br>
                 <li><u>MVP Goals</u>: "must look good", "must be bug free", "implement the <a href="https://en.wikipedia.org/wiki/Leitner_system">Leitner system</a>", "use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a> for fast release".</li>
                 <li><u>Later Goals</u>: "replay entire animated history of all remembered/forgotten recollections using <a href="https://d3js.org">D3.js</a>", "support images as question or answer including drag/drop positioning", "support rich text colors/fonts to assist with memory allowing heavy customization".</li>
                 <li><u>Ambitious Goals</u>: "offline support for mobile, with delayed uploads (needs entirely different UI revamp)", "admin panel statistics for analytics"</li>
+                <br>
                 <li>
                     <img class="icon" src="../git.png"> <b>Code:</b> <a href="https://github.com/nastajus/ng-cue-card">GitHub repository here</a>
                 </li>
