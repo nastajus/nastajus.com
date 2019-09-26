@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <link rel="stylesheet" type="text/css" href="../nastajus_site_theme.css">
-    <link href="//rawgithub.com/noelboss/featherlight/master/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+    <link href="https://rawgithub.com/noelboss/featherlight/master/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
     <!--<link-->
             <!--href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"-->
             <!--rel="stylesheet"  type='text/css'>-->
@@ -16,11 +16,11 @@
 <div id="mainContainer">
 
     <div class="section">
-        <h1><a href="#web" name="web">Full-Stack Web Dev</a></h1>
+        <h1><a id="web" name="web">Full-Stack Web Dev</a></h1>
     </div>
 
     <div class="section">
-        <h2><a href="#wv" name="wv">Full-Stack Challenge</a></h2>
+        <h2><a id="wv" name="wv">Simple Employee Expenses front/back</a></h2>
         <div class="partWidth">
             <a href="#" data-featherlight="#wv1"><img src="wv1.png" class="pic" id="wv1"/></a>
         </div>
@@ -35,9 +35,10 @@
         </div>
         <div class="description" style="overflow: hidden;">
             <ul style="text-align: justify;">
-                <li>Loads <a href="https://en.wikipedia.org/wiki/Comma-separated_values" title="Comma-separated values">CSV</a> file, from a web form, of employee expenses into relational database, able to calculate montly expense totals (all backend), presents back data tables (frontend)</li>
-                <li>Added RESTful API. Organized routers in-code cleanly. Used raw SQL queries vs. ORM-methods as necessary to query data as-needed.</li>
-                <li>Designed &amp; implemented completely from scratch in unfamilar tech stack in a few days.</li>
+                <li>Loads employee expenses via a <a href="https://en.wikipedia.org/wiki/Comma-separated_values" title="Comma-separated values">CSV</a> file.</li>
+                <li>Calculates montly expense totals, and fetches from database using both raw SQL/ORM methods, by providing RESTful API endpoints (backend). </li>
+                <li>Accepts user input via rudimentary web form for upload, and presents back data to clientside in colored tables (frontend).</li>
+                <li>Progressed from research to release over a few days to a bug-free prototype.</li>
                 <li><img class="icon" src="../youtube.png"> <b>Demo:</b> <a href="https://youtu.be/NlWhe2imk2s">video here</a> |
                     <img class="icon" src="../git.png"> <b>Code:</b> <a href="https://github.com/nastajus/wvchallenge-nodejs">GitHub repository here</a>
                 </li>
@@ -56,7 +57,7 @@
         </div>
         <div class="menuContainer">
             <div class="menuFouths">Languages<br/>PHP, MySQL, JavaScript, CSS, HTML</div>
-            <div class="menuFouths">Paradigms<br/>Imperative, Imperative, Declarative, Declarative, Aspect-Oriented</div>
+            <div class="menuFouths">Paradigms<br/>Imperative, Declarative, Aspect-Oriented</div>
             <div class="menuFouths">Framework<br/>JQuery</div>
             <div class="menuFouths" style="border-style: none">Type<br/>University Project</div>
         </div><br/>
@@ -117,7 +118,7 @@
             <div class="menuFouths">Language<br/>JavaScript</div>
             <div class="menuFouths">Paradigm<br/>Imperative</div>
             <div class="menuFouths">Frameworks<br/>RaphaelJS</div>
-            <div class="menuFouths" style="border-style: none">Type<br/>Work Side Project</div><br/>
+            <div class="menuFouths" style="border-style: none">Type<br/>Work Project</div><br/>
         </div>
         <div class="description" style="overflow: hidden">
             <ul style="text-align: justify;">
@@ -179,13 +180,14 @@
             <div class="menuFouths">Language<br/>JavaScript, DOM, Canvas, HTML5</div>
             <!--<div class="menuFouths">Paradigm<br/></div>-->
             <div class="menuFouths">Framework<br/>N/A (vanilla)</div>
-            <div class="menuFouths" style="border-style: none">Type<br/>Personal Side Project</div><br/>
+            <div class="menuFouths" style="border-style: none">Type<br/>Personal Project</div><br/>
         </div>
         <div class="description" style="overflow: hidden">
             <ul style="text-align: justify;">
-                <li>Solitary project</li>
-                <li>Follows clean code principles, by sectioning off code into isolated small functions to interact with the canvas.</li>
-                <li>Uses vanilla languages</li>
+                <li>Fun project inspired by machine learning classes with friends.</li>
+                <li>Created canvas drawing tool, allowing users to interact with DOM by adding new points/zoom.</li>
+                <li>Cleanly coded by sectioning off code into isolated small functions, and appropriate semantic modules.</li>
+                <li><em>(Temporary colors used for debugging positioning of CSS when I stopped development.)</em></li>
                 <li>
                     <!--<img class="icon" src="../youtube.png"> <b>Demo: </b> <a href="https://www.youtube.com/watch?v= ">video here</a> |-->
                     <img class="icon" src="../git.png"> <b>Code:</b> <a href="https://github.com/nastajus/javascriptApp5-canvas">GitHub repository here</a>
@@ -199,7 +201,7 @@
 
 
     <div class="section">
-        <h2><a href="#qu" name="qu">ITerm Queries</a></h2>
+        <h2><a href="#qu" name="qu">Ministry of Health Queries</a></h2>
         <div class="partWidth">
             <a href="#" data-featherlight="#qu1"><img src="qu1.png" class="pic" id="qu1"/></a>
         </div>
@@ -210,12 +212,13 @@
             <div class="menuFouths">Language<br/>Oracle SQL, PL/SQL</div>
             <div class="menuFouths">Paradigm<br/>Declarative, Imperative</div>
             <div class="menuFouths">Framework<br/>N/A</div>
-            <div class="menuFouths" style="border-style: none">Type<br/>Work Project</div><br/>
+            <div class="menuFouths" style="border-style: none">Type<br/>Co-op Project</div><br/>
         </div>
         <div class="description" style="overflow: hidden">
             <ul style="text-align: justify;">
-                <li>Analyzed proprietary ITerm schema successfully extracting useful data.</li>
-                <li>Employed both declarative and imperative styles of programming to achieve user-friendly presentation.</li>
+                <li>Assisted technical leads by researching relations in database on their behalf, during schema migration upgrade to new format for <a href="https://www.ehealthontario.ca/wps/portal/eHealthPortal/Applications/PanoramaInfo/!ut/p/z1/hc9NC4JAEAbg39LBqzOpiXRbLCT7WCFN20tobKugrqjl30-RDkbS3GZ4XmYGGETAyviVibjNZBnnfX9l5g0921juLe1IA3uDxD0YtnWmOlKEcAQzRRDYvzybEod624HQ3SU4aYirb0B93RwA-o5J-h3mB8zf4AITuUzGf0iZ6JYAVvMHr3mtPut-nLZt1awVVLDrOlVIKXKu3mWh4K9IKpsWoqmEqogw84rQasjiDYFDcDc!/dz/d5/L2dBISEvZ0FBIS9nQSEh/">Panorama</a>.</li>
+                <li>Analyzed large proprietary Ministry of Health schema for immunization history, extracting useful data.</li>
+                <li>Employed both declarative and imperative styles when structuring Oracle SQL queries, achieving maintainable code.</li>
                 <li>
                     <img class="icon" src="../nda.png" title="Due to non-disclosure agreement code cannot be distributed. However I am allowed to demonstrate in person."> Code not available
                 </li>
@@ -239,7 +242,7 @@
             <div class="menuFouths">Language<br/>Java</div>
             <div class="menuFouths">Paradigm<br/>Object-Oriented</div>
             <div class="menuFouths">Framework<br/>N/A</div>
-            <div class="menuFouths" style="border-style: none">Type<br/>Side Project</div><br/>
+            <div class="menuFouths" style="border-style: none">Type<br/>Personal Project</div><br/>
         </div>
         <div class="description" style="overflow: hidden">
             <ul style="text-align: justify;">
@@ -308,7 +311,7 @@
             <div class="menuFouths">Language<br/>C#</div>
             <div class="menuFouths">Paradigm<br/>Component-based</div>
             <div class="menuFouths">Frameworks<br/>Unity, Mono/.NET</div>
-            <div class="menuFouths" style="border-style: none">Type<br/>Personal Side Project Prototype</div>
+            <div class="menuFouths" style="border-style: none">Type<br/>Prototype</div>
         </div>
         <div class="description" style="overflow: hidden">
             <ul style="text-align: justify;">
@@ -503,8 +506,8 @@
 
 </div>
 
-<script src="//code.jquery.com/jquery-latest.js"></script>
-<script src="//rawgithub.com/noelboss/featherlight/master/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://rawgithub.com/noelboss/featherlight/master/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
