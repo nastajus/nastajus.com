@@ -164,6 +164,7 @@ a:active {
     background: url("nastajus-profile.png") no-repeat;
     display: inline-block;
     background-size: contain;
+    border-radius: 50%;
 }
 .profile:hover {
     background: url("nastajus2-profile.png") no-repeat;
@@ -184,4 +185,9 @@ a:active {
 
 h1>a{
     text-decoration: none;
+}
+
+
+.biglink {
+    font-size: 1.5em;
 }
