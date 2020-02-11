@@ -23,7 +23,7 @@ body{
 
     width: calc(100vw - 8px - 8px - 9px); /* can't explain need for extra 9px on resume/portfolio indexes...  */
 
-    height: calc(100vh - 8px - 8px);
+    min-height: calc(100vh - 8px - 8px);
 
 
     /* width: 100vw;
