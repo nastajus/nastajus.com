@@ -1,30 +1,31 @@
 html {
 
 
+
 }
 
 
 body{
-    
+
     margin: 0;
-    /* margin: 8px;  */
-    /* explictly setting for my own awareness */
 
     background: #2B2B2B;
     color: #A9B7C6;
     font-family: ConsolasMEW, monospace;
     font-size: 12.0pt;
 
-    
+
 }
 
-#fillWindow 
+#fillWindow
 {
     margin: 8px;
-    width: calc(100vw - 8px - 8px);
+
+    width: calc(100vw - 8px - 8px - 9px); /* can't explain need for extra 9px on resume/portfolio indexes...  */
+
     height: calc(100vh - 8px - 8px);
 
-    
+
     /* width: 100vw;
     height: 100vh; */
 
@@ -33,6 +34,9 @@ body{
 
     /* width: auto;
     height: auto; */
+
+    /* background: #E7BE5F; */
+
 }
 
 
@@ -44,7 +48,7 @@ body{
     max-width: 700px;
     /* width: 100%; */
     min-height: calc(100% - 50px - 50px);
-    /* min-height: 490px; */  
+    /* min-height: 490px; */
 
     /* width: 500px;
     height: 500px; */
@@ -186,7 +190,7 @@ a:active {
     padding-right: 10px;
 }
 
-.toronto_icon{
+.toronto_icon {
     width: 14px;
     height: 17px;
     background: url("toronto-icon.png") no-repeat;
@@ -194,7 +198,7 @@ a:active {
     background-size: contain;
 }
 
-h1>a{
+h1 > a {
     text-decoration: none;
 }
 
