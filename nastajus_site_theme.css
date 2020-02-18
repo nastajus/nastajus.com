@@ -240,7 +240,7 @@ h1 > a {
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 240px;
-    height: 110px;
+    height: 45px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -251,7 +251,7 @@ h1 > a {
     position: absolute;
     z-index: 1;
 
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   
   .tooltip:hover .tooltiptext {
