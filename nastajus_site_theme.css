@@ -203,6 +203,13 @@ a:active {
     padding: 4px 0;
 }
 
+.ful {
+    text-align: left;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
 .toronto_icon {
     width: 14px;
     height: 17px;
@@ -219,6 +226,38 @@ h1 > a {
 .biglink {
     font-size: 1.5em;
 }
+
+
+
+/* Courtesy of:  https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    height: 110px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+
+    font-size: 0.8em;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
 
 
 
