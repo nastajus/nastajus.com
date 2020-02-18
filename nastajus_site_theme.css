@@ -186,8 +186,21 @@ a:active {
     background-size: contain;
 }
 
-.fa {
+.ifad {
+    
+    visibility: hidden;
+}
+
+.fad {
     padding-right: 10px;
+    padding-left: 10px;
+}
+
+.fav {
+    display: inline-block; 
+    position: relative; 
+    bottom: -5px; 
+    padding: 4px 0;
 }
 
 .toronto_icon {
