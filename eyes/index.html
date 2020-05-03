@@ -16,22 +16,25 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 </head>
 <body>
 
-  <div id="Page1">
-    Content of page 1
-    <a href="#" onclick="return show('Page2','  ');">Show page 2</a>
+  <div style="text-align: center;">
+
+    <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(emails[(currentEmail--) % emails.length])"></i>
+    
+    <span id="email_list" style="font-size:48px;">
+        <script>
+        var arr = emails.toString().split("/").toString().split(",").filter(word => word !== "index.html")
+        document.getElementById("email_list").innerHTML = "{email# " + 
+        arr
+        // .map(function(val,index,array){
+        //   return val;
+        // })
+         + "}"; 
+     </script>
+     </span>
+
+    <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(emails[(currentEmail++) % emails.length])"></i>
   </div>
 
-  <div id="Page2" style="display:none">
-    Content of page 2
-    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-  </div>
-
-  <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(emails[(currentEmail--) % emails.length])"></i>
-
-  <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(emails[(currentEmail++) % emails.length])"></i>
-
-
-  <!-- <iframe src="1/index.html" allow="fullscreen"></iframe> -->
 
   <div id="here"></div>
 
@@ -41,7 +44,6 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 
     function show(htmlPage) {
       fetch(htmlPage).then(function (response) {
-      //fetch('1/index.html').then(function (response) {
         // The API call was successful!
         return response.text();
       }).then(function (html) {
