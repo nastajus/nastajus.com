@@ -18,7 +18,7 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 
   <div style="text-align: center;">
 
-    <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(emails[(currentEmail--) % emails.length])"></i>
+    <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(-1)"></i>
 
 
     
@@ -32,7 +32,7 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
         </span>
      </span>
 
-    <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(emails[(currentEmail++) % emails.length])"></i>
+    <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(+1)"></i>
   </div>
 
 
@@ -42,7 +42,15 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 
     console.log(emails);
 
-    function show(htmlPage) {
+    function show(indexChange) {
+      
+      var next = currentEmail + indexChange;
+      if (next == -1) next = emails.length - 1;
+
+      currentEmail = (next) % emails.length;
+      var targetEmail = currentEmail;
+      console.log(targetEmail);
+      var htmlPage = emails[targetEmail];
       fetch(htmlPage).then(function (response) {
         // The API call was successful!
         return response.text();
@@ -64,7 +72,7 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 
     }
 
-    show(emails[currentEmail]);
+    show(0);
 
   </script>
 
