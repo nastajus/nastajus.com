@@ -19,17 +19,17 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
   <div style="text-align: center;">
 
     <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(emails[(currentEmail--) % emails.length])"></i>
+
+
     
-    <span id="email_list" style="font-size:48px;">
+    <span>
+        <span style="font-size:36px;">Email Selector:</span>
+        <span id="email_list" style="font-size:48px;">
         <script>
         var arr = emails.toString().split("/").toString().split(",").filter(word => word !== "index.html")
-        document.getElementById("email_list").innerHTML = "{email# " + 
-        arr
-        // .map(function(val,index,array){
-        //   return val;
-        // })
-         + "}"; 
-     </script>
+        document.getElementById("email_list").innerHTML = "{email# " + arr + "}"; 
+        </script>
+        </span>
      </span>
 
     <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(emails[(currentEmail++) % emails.length])"></i>
