@@ -26,8 +26,17 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
         <span style="font-size:36px;">Email Selector:</span>
         <span id="email_list" style="font-size:48px;">
         <script>
-        var arr = emails.toString().split("/").toString().split(",").filter(word => word !== "index.html")
-        document.getElementById("email_list").innerHTML = "{email# " + arr + "}"; 
+        var items = emails.toString().split("/").toString().split(",").filter(word => word !== "index.html")
+
+
+        //items.forEach((element, index) => this[index] = `<span id="${index}">` + element + "</span>");
+        //arr.forEach((o, i, a) => a[i] = myNewVal) 
+        items.forEach((o,i,a) => a[i] = "new");
+        items.forEach((element, index, array) => array[index] = `<span id="email${index}">` + element + "</span>");
+
+        console.log(items);
+
+        document.getElementById("email_list").innerHTML = "{email# " + items + "}"; 
         </script>
         </span>
      </span>
@@ -44,12 +53,12 @@ var emails = ['1/index.html', '1b/index.html', '2/index.html', '2b/index.html', 
 
     function show(indexChange) {
       
+      //my brain sends apologies. 
       var next = currentEmail + indexChange;
       if (next == -1) next = emails.length - 1;
-
       currentEmail = (next) % emails.length;
       var targetEmail = currentEmail;
-      console.log(targetEmail);
+
       var htmlPage = emails[targetEmail];
       fetch(htmlPage).then(function (response) {
         // The API call was successful!
