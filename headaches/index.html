@@ -1,0 +1,86 @@
+<html>
+<head>
+<script>
+function show(shown, hidden) {
+    document.getElementById(shown).style.display='block';
+    document.getElementById(hidden).style.display='none';
+    return false;
+}
+
+var currentEmail = 0;
+var emails = ['1/index.html']
+
+
+</script>
+<script src="https://use.fontawesome.com/7010a79c9c.js"></script>
+</head>
+<body>
+
+  <div style="text-align: center;">
+
+    <i class="fa fa-arrow-circle-left fa-3x" aria-hidden="true" id="left" onclick="show(-1)"></i>
+
+
+    
+    <span>
+        <span style="font-size:36px;">Email Selector:</span>
+        <span id="email_list" style="font-size:48px;">
+        <script>
+        var items = emails.toString().split("/").toString().split(",").filter(word => word !== "index.html")
+
+        items.forEach((element, index, array) => array[index] = `<span id="email${index}">` + element + "</span>");
+
+        document.getElementById("email_list").innerHTML = "{email# " + items + "}"; 
+        </script>
+        </span>
+     </span>
+
+    <i class="fa fa-arrow-circle-right fa-3x" aria-hidden="true" id="right" onclick="show(+1)"></i>
+  </div>
+
+
+  <div id="the_email"></div>
+
+  <script>
+
+    function show(indexChange) {
+      
+      //determine which email to show
+      //my brain sends apologies. 
+      var next = currentEmail + indexChange;
+      if (next == -1) next = emails.length - 1;
+      currentEmail = (next) % emails.length;
+
+      //fetch and show that email
+      var htmlPage = emails[currentEmail];
+      fetch(htmlPage).then(function (response) {
+        // The API call was successful!
+        return response.text();
+      }).then(function (html) {
+
+        // shove into target area
+        var target = document.getElementById("the_email");
+        target.innerHTML = html 
+
+      }).catch(function (err) {
+        // There was an error
+        console.warn('Something went wrong.', err);
+      });
+
+
+      //reset all other index styles
+      var nodes = document.getElementById('email_list').childNodes;
+      nodes.forEach(e => e.style = "none");
+
+      //set active index style
+      var indiceTarget = document.getElementById(`email${currentEmail}`)
+      indiceTarget.style.border = "3px solid #FF0000";
+    
+    }
+
+    show(0);
+
+  </script>
+
+</body>
+</html>
